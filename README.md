@@ -8,13 +8,9 @@
 ## Final Project: Script 2
 ### HangMan
 - A script that play a word guessing game with player.   
-
 - Player has 7 chances to guess the word, one letter each time.  
-
 - With each fail, there will be a reaction from game.  
-- 
 - Player wins if he/she guess the word correct within 7 tries.  
-- 
 - Otherwise game will show the correct word then end.
 
 ## Final Project: Documentation
@@ -40,7 +36,7 @@ In the main python file the game process is:
 - The first problem is I don’t know how to import the word list from another python file on Colab which works fine on local IDLE. Solved by solution on StackOverflow: https://stackoverflow.com/questions/48905127/importing-py-files-in-google-colab
 - The second problem is finding a data structure to store the hangman process.  Python Dictionary is a perfect data structure since I want to access the different steps relates to the corresponding lives.  
 - The third problem I encountered is when I tried to write code more pythonic.  I want to reduce the lines of code, thus, I use list comprehension to create word_list:
-***word_list = [letter if letter in used_letters else '-' for letter in word]***
+***word_list = [letter if letter in used_letters else '-' for letter in word]***  
 I did not understand how this work at first, so I spent some time practicing with the list comprehension and finally getting this work.
 
 - The last problem is the design of game logic in the while loop, I use several if, elif, else statements to implement game logic, it takes some time to figure out the right flow. I solve this problem by writing pseudocode first and then implement the design with real python code.
